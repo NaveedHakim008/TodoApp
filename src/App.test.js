@@ -14,7 +14,7 @@ test('full app rendering/navigating', async () => {
   
 
   // verify page content for expected route after navigating
-  await user.click(screen.getByText(/About/i))
+  await user.click(screen.getByText(/Home/i))
   expect(screen.getByText(/This is a simple React Todo App/i)).toBeInTheDocument()
 })
 
